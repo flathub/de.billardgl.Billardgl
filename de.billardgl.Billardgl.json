@@ -2,7 +2,7 @@
     "app-id": "de.billardgl.Billardgl",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08",
     "command": "billard-gl",
     "separate-locales": false,
     "cleanup": [ "/include", "/lib/*.a", "/lib/*.la", "/lib/pkgconfig" ],
@@ -12,7 +12,7 @@
         "--device=dri"
     ],
     "modules": [
-        "shared-modules/glu/glu-9.0.0.json",
+        "shared-modules/glu/glu-9.json",
         {
             "name": "freeglut",
             "buildsystem": "cmake-ninja",
