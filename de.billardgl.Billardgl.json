@@ -52,7 +52,7 @@
                 "for d in 1 2 4 8; do install -Dm644 Texturen/$d/* -t ${FLATPAK_DEST}/share/BillardGL/Texturen/$d/; done",
                 "install -Dm644 ${FLATPAK_ID}.appdata.xml -t ${FLATPAK_DEST}/share/appdata/",
                 "install -Dm644 ${FLATPAK_ID}.desktop -t ${FLATPAK_DEST}/share/applications/",
-                "install -Dm644 ${FLATPAK_ID}.png -t ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/"
+                "for s in 64 128; do install -Dm644 ${FLATPAK_ID}.${s}.png ${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/${FLATPAK_ID}.png; done"
             ],
             "sources": [
                 {
@@ -76,15 +76,19 @@
                 },
                 {
                     "type": "file",
+                    "path": "de.billardgl.Billardgl.64.png"
+                },
+                {
+                    "type": "file",
+                    "path": "de.billardgl.Billardgl.128.png"
+                },
+                {
+                    "type": "file",
                     "path": "de.billardgl.Billardgl.appdata.xml"
                 },
                 {
                     "type": "file",
                     "path": "de.billardgl.Billardgl.desktop"
-                },
-                {
-                    "type": "file",
-                    "path": "de.billardgl.Billardgl.png"
                 }
             ]
         },
