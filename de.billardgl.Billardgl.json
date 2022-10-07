@@ -23,7 +23,7 @@
             },
             "config-opts": [
                 "-DFREEGLUT_BUILD_STATIC_LIBS=OFF",
-                "-DCMAKE_BUILD_TYPE=None"
+                "-DCMAKE_BUILD_TYPE=Release"
             ],
             "sources": [
                 {
