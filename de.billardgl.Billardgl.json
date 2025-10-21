@@ -5,7 +5,10 @@
     "runtime-version": "22.08",
     "command": "billard-gl",
     "separate-locales": false,
-    "cleanup": [ "/include", "/lib/pkgconfig" ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig"
+    ],
     "finish-args": [
         "--device=dri",
         "--share=ipc",
@@ -26,8 +29,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/freeglut/freeglut-3.2.1.tar.gz",
-                    "sha256": "d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68",
+                    "url": "https://downloads.sourceforge.net/freeglut/freeglut-3.6.0.tar.gz",
+                    "sha256": "9c3d4d6516fbfa0280edc93c77698fb7303e443c1aaaf37d269e3288a6c3ea52",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 846,
@@ -116,4 +119,3 @@
         }
     ]
 }
-
