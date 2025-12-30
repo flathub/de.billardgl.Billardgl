@@ -2,7 +2,7 @@
     "app-id": "de.billardgl.Billardgl",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "22.08",
+    "runtime-version": "25.08",
     "command": "billard-gl",
     "separate-locales": false,
     "cleanup": [ "/include", "/lib/pkgconfig" ],
@@ -26,8 +26,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/freeglut/freeglut-3.2.1.tar.gz",
-                    "sha256": "d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68",
+                    "url": "https://downloads.sourceforge.net/freeglut/freeglut-3.8.0.tar.gz",
+                    "sha256": "674dcaff25010e09e450aec458b8870d9e98c46f99538db457ab659b321d9989",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 846,
